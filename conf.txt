@@ -1,0 +1,16 @@
+port : WebSocket服务器端口
+heartbeat_interval : 心跳间隔（毫秒）
+default_punishment_time : 波形发送频率Hz
+default_punishment_duration : 波形默认持续时间（秒）
+log_level : 日志级别
+
+void parseConfig(const std::string& filename) {
+    std::ifstream file(filename);
+    std::string line;
+    while (std::getline(file, line)) {
+        auto pos = line.find(':');
+        std::string key = line.substr(0, pos);
+        std::string value = line.substr(pos + 1);
+        std::cout << "Key: " << key << ", Value: " << value << std::endl;
+    }
+}

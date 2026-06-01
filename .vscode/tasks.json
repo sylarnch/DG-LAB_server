@@ -1,0 +1,46 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build active file",
+            "command": "D:\\SOFTWARE\\MinGW64\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${workspaceFolder}\\source\\*.cpp",
+                "-o",
+                "${workspaceFolder}\\main.exe",
+                "-I",
+                "C:\\cpplib\\boost_1_75_0",
+                "-I",
+                "C:\\cpplib\\websocketpp-0.8.2",
+                "-I",
+                "${workspaceFolder}\\include",
+                "-I",
+                "C:\\cpplib\\jsoncpp\\include",
+                "-L",
+                "C:\\cpplib\\jsoncpp\\lib",
+                "-L",
+                "C:\\cpplib\\boost_1_75_0\\stage\\lib",
+                "-llibboost_system-mgw16-mt-x64-1_75",
+                "-ljsoncpp",
+                "-lpthread",
+                "-lws2_32",
+                "-lmswsock",
+                "-lbcrypt",
+                "-Wno-deprecated-declarations"
+            ],
+            "options": {
+                "cwd": "D:\\SOFTWARE\\MinGW64\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "Generated task by Debugger."
+        }
+    ]
+}
